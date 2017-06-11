@@ -1,5 +1,7 @@
 # EducationTemplate-个人Web项目
 基于ThinkPHP3.2后台管理系统+BootStrap页面的精品课程后台管理系统
+
+# Client
 项目以安卓App为前端，客户端详细请见[https://github.com/AndroidHensen/Client_EducationTemplate](https://github.com/AndroidHensen/Client_EducationTemplate)
 
 # Screenshot
