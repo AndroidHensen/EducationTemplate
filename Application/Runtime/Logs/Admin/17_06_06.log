@@ -1,0 +1,1163 @@
+[ 2017-06-06T17:43:21+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001569s ]
+NOTIC: [8] Undefined variable: module E:\Program Files\phpStudy\WWW\TP_teacher\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var E:\Program Files\phpStudy\WWW\TP_teacher\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given E:\Program Files\phpStudy\WWW\TP_teacher\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given E:\Program Files\phpStudy\WWW\TP_teacher\ThinkPHP\Common\functions.php 第 990 行.
+
+[ 2017-06-06T17:43:21+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000408s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001947s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003057s ]
+
+[ 2017-06-06T17:43:22+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007330s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2017-06-06T17:43:30+08:00 ] ::1 /admin.php?c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: UPDATE `cms_admin` SET `lastlogintime`='1496742210' WHERE ( admin_id=8 ) [ RunTime:0.0008s ]
+
+[ 2017-06-06T17:43:32+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` = 1 ORDER BY count desc LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\PositionModel.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0469s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_position` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0131s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_admin` WHERE `status` = 1 AND `lastlogintime` > 1496678400 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0013s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100889s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002767s ]
+
+[ 2017-06-06T17:43:35+08:00 ] ::1 /index.php?m=admin&c=video&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\VideoController.class.php 第 19 行.
+NOTIC: [8] Undefined index: p E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\VideoController.class.php 第 31 行.
+NOTIC: [8] Undefined index: pageSize E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\VideoController.class.php 第 32 行.
+NOTIC: [2048] Declaration of Common\Model\VideoModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\VideoModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_video` [ RunTime:0.0819s ]
+SQL: SELECT * FROM `cms_video` WHERE `status` <> -1 ORDER BY listorder desc,news_id desc LIMIT 0,10   [ RunTime:0.0133s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_video` LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000295s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000496s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: positions E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\a1139c397cab62ab83c0f7dbd7530fa9.php 第 103 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\a1139c397cab62ab83c0f7dbd7530fa9.php 第 120 行.
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\a1139c397cab62ab83c0f7dbd7530fa9.php 第 132 行.
+NOTIC: [8] Undefined index:  E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 104 行.
+NOTIC: [8] Undefined index:  E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002844s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004080s ]
+
+[ 2017-06-06T17:43:39+08:00 ] ::1 /admin.php?c=video&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: titleFontColor E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\a2da0f70c34c7e5c8bb32c13948421ec.php 第 133 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\a2da0f70c34c7e5c8bb32c13948421ec.php 第 144 行.
+NOTIC: [8] Undefined variable: copyfrom E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\a2da0f70c34c7e5c8bb32c13948421ec.php 第 155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.086598s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.086725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002967s ]
+
+[ 2017-06-06T17:43:43+08:00 ] ::1 /admin.php?c=image&a=ajaxuploadimage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant m - assumed 'm' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant d - assumed 'd' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\Program Files\phpStudy\WWW\TP_teacher\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2017-06-06T17:43:47+08:00 ] ::1 /admin.php?c=video&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+NOTIC: [2048] Declaration of Common\Model\VideoModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\VideoModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_video` [ RunTime:0.0128s ]
+SQL: INSERT INTO `cms_video` (`title`,`thumb`,`create_time`,`username`) VALUES ('报到证','/upload/2017/06/06/5936794fb8fa0.rmvb','1496742227','admin') [ RunTime:0.0012s ]
+
+[ 2017-06-06T17:43:49+08:00 ] ::1 /admin.php?c=video&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\VideoController.class.php 第 19 行.
+NOTIC: [8] Undefined index: p E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\VideoController.class.php 第 31 行.
+NOTIC: [8] Undefined index: pageSize E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\VideoController.class.php 第 32 行.
+NOTIC: [2048] Declaration of Common\Model\VideoModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\VideoModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_video` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `cms_video` WHERE `status` <> -1 ORDER BY listorder desc,news_id desc LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_video` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: positions E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\a1139c397cab62ab83c0f7dbd7530fa9.php 第 103 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\a1139c397cab62ab83c0f7dbd7530fa9.php 第 120 行.
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\a1139c397cab62ab83c0f7dbd7530fa9.php 第 132 行.
+NOTIC: [8] Undefined index:  E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 104 行.
+NOTIC: [8] Undefined index:  E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 104 行.
+NOTIC: [8] Undefined index:  E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001096s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001227s ]
+
+[ 2017-06-06T17:59:19+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` = 1 ORDER BY count desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\PositionModel.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_position` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_admin` WHERE `status` = 1 AND `lastlogintime` > 1496678400 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001536s ]
+
+[ 2017-06-06T17:59:22+08:00 ] ::1 /index.php?m=admin&c=video&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\VideoController.class.php 第 19 行.
+NOTIC: [8] Undefined index: p E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\VideoController.class.php 第 31 行.
+NOTIC: [8] Undefined index: pageSize E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\VideoController.class.php 第 32 行.
+NOTIC: [2048] Declaration of Common\Model\VideoModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\VideoModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_video` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `cms_video` WHERE `status` <> -1 ORDER BY listorder desc,news_id desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_video` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: positions E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\a1139c397cab62ab83c0f7dbd7530fa9.php 第 103 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\a1139c397cab62ab83c0f7dbd7530fa9.php 第 120 行.
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\a1139c397cab62ab83c0f7dbd7530fa9.php 第 132 行.
+NOTIC: [8] Undefined index:  E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 104 行.
+NOTIC: [8] Undefined index:  E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 104 行.
+NOTIC: [8] Undefined index:  E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001387s ]
+
+[ 2017-06-06T17:59:26+08:00 ] ::1 /admin.php?c=video&a=setStatus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+NOTIC: [2048] Declaration of Common\Model\VideoModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\VideoModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_video` [ RunTime:0.0161s ]
+SQL: UPDATE `cms_video` SET `status`='-1' WHERE ( news_id=32 ) [ RunTime:0.0012s ]
+
+[ 2017-06-06T17:59:28+08:00 ] ::1 /index.php?m=admin&c=video&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\VideoController.class.php 第 19 行.
+NOTIC: [8] Undefined index: p E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\VideoController.class.php 第 31 行.
+NOTIC: [8] Undefined index: pageSize E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\VideoController.class.php 第 32 行.
+NOTIC: [2048] Declaration of Common\Model\VideoModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\VideoModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_video` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `cms_video` WHERE `status` <> -1 ORDER BY listorder desc,news_id desc LIMIT 0,10   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_video` LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: positions E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\a1139c397cab62ab83c0f7dbd7530fa9.php 第 103 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\a1139c397cab62ab83c0f7dbd7530fa9.php 第 120 行.
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\a1139c397cab62ab83c0f7dbd7530fa9.php 第 132 行.
+NOTIC: [8] Undefined index:  E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 104 行.
+NOTIC: [8] Undefined index:  E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001583s ]
+
+[ 2017-06-06T23:47:18+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+NOTIC: [8] Undefined variable: module E:\Program Files\phpStudy\WWW\TP_teacher\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var E:\Program Files\phpStudy\WWW\TP_teacher\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given E:\Program Files\phpStudy\WWW\TP_teacher\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given E:\Program Files\phpStudy\WWW\TP_teacher\ThinkPHP\Common\functions.php 第 990 行.
+
+[ 2017-06-06T23:47:18+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001451s ]
+
+[ 2017-06-06T23:47:19+08:00 ] ::1 /admin.php?m=&&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001054s ]
+
+[ 2017-06-06T23:47:28+08:00 ] ::1 /admin.php?c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `cms_admin` SET `lastlogintime`='1496764048' WHERE ( admin_id=8 ) [ RunTime:0.0010s ]
+
+[ 2017-06-06T23:47:30+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` = 1 ORDER BY count desc LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\PositionModel.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0145s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_position` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_admin` WHERE `status` = 1 AND `lastlogintime` > 1496678400 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001189s ]
+
+[ 2017-06-06T23:47:33+08:00 ] ::1 /index.php?m=admin&c=content&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 18 行.
+NOTIC: [8] Undefined index: p E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 30 行.
+NOTIC: [8] Undefined index: pageSize E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 31 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` <> -1 ORDER BY listorder desc,news_id desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: positions E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 103 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 121 行.
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 134 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 92 行.
+NOTIC: [8] Undefined index:  E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001063s ]
+
+[ 2017-06-06T23:47:36+08:00 ] ::1 /admin.php?c=content&a=edit&id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `cms_news` WHERE ( news_id=28 ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000542s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: titleFontColor E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 127 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 139 行.
+NOTIC: [8] Undefined variable: copyfrom E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071510s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000948s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001026s ]
+
+[ 2017-06-06T23:47:49+08:00 ] ::1 /admin.php?c=image&a=kindupload&dir=image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant m - assumed 'm' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant d - assumed 'd' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\Program Files\phpStudy\WWW\TP_teacher\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2017-06-06T23:47:53+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001416s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0189s ]
+SQL: UPDATE `cms_news` SET `title`='大学生职业发展与就业指导课现阶段',`thumb`='/upload/2017/05/04/590aaae1b0d4a.png',`content`='<p class=\"MsoNormal\" align=\"center\" style=\"text-align:center;\">
+	<b> </b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\" style=\"text-indent:28pt;\">
+	<b> 大学生职业发展与就业指导课现阶段作为公共必修课，既强调职业在人生发展中的重要地位，又关注学生的全面发展和终身发展。通过激发大学生职业生涯发展的自主意识，树立正确的就业观，促使大学生理性地规划自身未来的发展，并努力在学习过程中自觉地提高就业能力和生涯管理能力。<span></span> </b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\" style=\"text-indent:28pt;\">
+	<b>在课程设置方面，实现生涯指导四年不断线。在本科一年级开展《大学生职业启蒙教育》模块教学，指导学生认知自己，认知专业，初步树立职业意识，并结合本专业的职业要求规划自己的大学生活；在本科二年级开展《大学生职业发展与规划教育》模块教学，指导学生进行科学的职业规划、探索自己的职业定位、提高职业能力；在本科三年级开展《大学生就业指导教育》模块教学，帮助学生明确职业方向，了解就业政策和就业流程，掌握求职策略，提高就业能力；在本科四年级开展《大学生就业形势与政策教育》模块教学，了解当前就业形势，提升求职、创业意识，帮助学生了解毕业、就业必要程序和相关政策。</b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\" style=\"text-indent:28pt;\">
+	<b>在课程目标方面，通过课程教学，大学生应当在态度、知识和技能三个层面均达到以下目标。<span>1.</span>态度层面：通过本课程的教学，大学生应当树立起职业生涯发展的自主意识，树立积极正确的人生观、价值观和就业观念，把个人发展和国家需要、社会发展相结合，确立职业的概念和意识，愿意为个人的生涯发展和社会发展主动付出积极的努力。<span>2.</span>知识层面：通过本课程的教学，大学生应当基本了解职业发展的阶段特点；较为清晰地认识自己的特性、职业的特性以及社会环境；了解就业形势与政策法规；掌握基本的劳动力市场信息、相关的职业分类知识以及创业的基本知识。<span>3.</span>技能层面：通过本课程的教学，大学生应当掌握自我探索技能、信息搜索与管理技能、生涯决策技能、求职技能等，还应该通过课程提高学生的各种通用技能，比如沟通技能、问题解决技能、自我管理技能和人际交往技能等。<span></span> </b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\" style=\"text-indent:28pt;\">
+	<b>在教学模式方面，采用理论与实践相结合、讲授与训练相结合的方式进行。教学可采用课堂讲授、典型案例分析、情景模拟训练、小组讨论、角色扮演、社会调查、实习见习等方法。在教学的过程中，要充分利用各种资源。除了教师和学生自身的资源之外，还需要使用相关的职业生涯与发展规划工具，包括职业测评、相关图书资料等；可以调动社会资源，采取与外聘专家、成功校友、职场人物专题讲座和座谈相结合的方法。是集理论课、实务课和经验课为一体的综合课程。<span></span> </b> 
+</p>
+<p class=\"MsoNormal\">
+	<b><span> </span> </b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\" style=\"text-indent:28pt;\">
+	<b><img src=\"/upload/2017/06/06/5936cea51dc4f.png\" alt=\"\" /><br />
+</b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\">
+	<b><b> </b> </b> 
+</p>
+<p>
+	<br />
+</p>
+<p class=\"MsoNormal\" align=\"left\">
+	<b></b> 
+</p>' WHERE ( news_id=28 ) [ RunTime:0.0016s ]
+
+[ 2017-06-06T23:47:55+08:00 ] ::1 /admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 18 行.
+NOTIC: [8] Undefined index: p E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 30 行.
+NOTIC: [8] Undefined index: pageSize E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 31 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0163s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` <> -1 ORDER BY listorder desc,news_id desc LIMIT 0,10   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: positions E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 103 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 121 行.
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 134 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 92 行.
+NOTIC: [8] Undefined index:  E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002197s ]
+
+[ 2017-06-06T23:53:44+08:00 ] ::1 /admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001149s ]
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 18 行.
+NOTIC: [8] Undefined index: p E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 30 行.
+NOTIC: [8] Undefined index: pageSize E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 31 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` <> -1 ORDER BY listorder desc,news_id desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: positions E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 103 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 121 行.
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 134 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 92 行.
+NOTIC: [8] Undefined index:  E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001556s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001683s ]
+
+[ 2017-06-06T23:53:52+08:00 ] ::1 /admin.php?c=content&a=edit&id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001124s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `cms_news` WHERE ( news_id=28 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: titleFontColor E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 127 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 139 行.
+NOTIC: [8] Undefined variable: copyfrom E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026394s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001650s ]
+
+[ 2017-06-06T23:54:02+08:00 ] ::1 /admin.php?c=image&a=kindupload&dir=image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001540s ]
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant m - assumed 'm' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant d - assumed 'd' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\Program Files\phpStudy\WWW\TP_teacher\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2017-06-06T23:54:42+08:00 ] ::1 /admin.php?c=content&a=edit&id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001575s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `cms_news` WHERE ( news_id=28 ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: titleFontColor E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 127 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 139 行.
+NOTIC: [8] Undefined variable: copyfrom E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038930s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001843s ]
+
+[ 2017-06-06T23:54:51+08:00 ] ::1 /admin.php?c=image&a=kindupload&dir=image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant m - assumed 'm' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant d - assumed 'd' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\Program Files\phpStudy\WWW\TP_teacher\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2017-06-06T23:55:06+08:00 ] ::1 /admin.php?c=content&a=edit&id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cms_news` WHERE ( news_id=28 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: titleFontColor E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 127 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 139 行.
+NOTIC: [8] Undefined variable: copyfrom E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000889s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001143s ]
+
+[ 2017-06-06T23:55:15+08:00 ] ::1 /admin.php?c=image&a=kindupload&dir=image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant m - assumed 'm' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant d - assumed 'd' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\Program Files\phpStudy\WWW\TP_teacher\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2017-06-06T23:56:19+08:00 ] ::1 /admin.php?c=content&a=edit&id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `cms_news` WHERE ( news_id=28 ) LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: titleFontColor E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 127 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 139 行.
+NOTIC: [8] Undefined variable: copyfrom E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037845s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001309s ]
+
+[ 2017-06-06T23:56:28+08:00 ] ::1 /admin.php?c=image&a=kindupload&dir=image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant m - assumed 'm' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant d - assumed 'd' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\Program Files\phpStudy\WWW\TP_teacher\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2017-06-06T23:56:31+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000963s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001419s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0062s ]
+SQL: UPDATE `cms_news` SET `title`='大学生职业发展与就业指导课现阶段',`thumb`='/upload/2017/05/04/590aaae1b0d4a.png',`content`='<p class=\"MsoNormal\" align=\"center\" style=\"text-align:center;\">
+	<b> </b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\" style=\"text-indent:28pt;\">
+	<b> 大学生职业发展与就业指导课现阶段作为公共必修课，既强调职业在人生发展中的重要地位，又关注学生的全面发展和终身发展。通过激发大学生职业生涯发展的自主意识，树立正确的就业观，促使大学生理性地规划自身未来的发展，并努力在学习过程中自觉地提高就业能力和生涯管理能力。<span></span> </b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\" style=\"text-indent:28pt;\">
+	<b>在课程设置方面，实现生涯指导四年不断线。在本科一年级开展《大学生职业启蒙教育》模块教学，指导学生认知自己，认知专业，初步树立职业意识，并结合本专业的职业要求规划自己的大学生活；在本科二年级开展《大学生职业发展与规划教育》模块教学，指导学生进行科学的职业规划、探索自己的职业定位、提高职业能力；在本科三年级开展《大学生就业指导教育》模块教学，帮助学生明确职业方向，了解就业政策和就业流程，掌握求职策略，提高就业能力；在本科四年级开展《大学生就业形势与政策教育》模块教学，了解当前就业形势，提升求职、创业意识，帮助学生了解毕业、就业必要程序和相关政策。</b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\" style=\"text-indent:28pt;\">
+	<b>在课程目标方面，通过课程教学，大学生应当在态度、知识和技能三个层面均达到以下目标。<span>1.</span>态度层面：通过本课程的教学，大学生应当树立起职业生涯发展的自主意识，树立积极正确的人生观、价值观和就业观念，把个人发展和国家需要、社会发展相结合，确立职业的概念和意识，愿意为个人的生涯发展和社会发展主动付出积极的努力。<span>2.</span>知识层面：通过本课程的教学，大学生应当基本了解职业发展的阶段特点；较为清晰地认识自己的特性、职业的特性以及社会环境；了解就业形势与政策法规；掌握基本的劳动力市场信息、相关的职业分类知识以及创业的基本知识。<span>3.</span>技能层面：通过本课程的教学，大学生应当掌握自我探索技能、信息搜索与管理技能、生涯决策技能、求职技能等，还应该通过课程提高学生的各种通用技能，比如沟通技能、问题解决技能、自我管理技能和人际交往技能等。<span></span> </b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\" style=\"text-indent:28pt;\">
+	<b>在教学模式方面，采用理论与实践相结合、讲授与训练相结合的方式进行。教学可采用课堂讲授、典型案例分析、情景模拟训练、小组讨论、角色扮演、社会调查、实习见习等方法。在教学的过程中，要充分利用各种资源。除了教师和学生自身的资源之外，还需要使用相关的职业生涯与发展规划工具，包括职业测评、相关图书资料等；可以调动社会资源，采取与外聘专家、成功校友、职场人物专题讲座和座谈相结合的方法。是集理论课、实务课和经验课为一体的综合课程。<span></span> </b> 
+</p>
+<p class=\"MsoNormal\">
+	<b><span> </span> </b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\" style=\"text-indent:28pt;\">
+	<b><img src=\"/upload/2017/06/06/5936d0ac13790.png\" alt=\"\" /><br />
+</b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\">
+	<b><b> </b> </b> 
+</p>
+<p>
+	<br />
+</p>
+<p class=\"MsoNormal\" align=\"left\">
+	<b></b> 
+</p>' WHERE ( news_id=28 ) [ RunTime:0.0006s ]
+
+[ 2017-06-06T23:56:34+08:00 ] ::1 /admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001865s ]
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 18 行.
+NOTIC: [8] Undefined index: p E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 30 行.
+NOTIC: [8] Undefined index: pageSize E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 31 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` <> -1 ORDER BY listorder desc,news_id desc LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: positions E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 103 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 121 行.
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 134 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 92 行.
+NOTIC: [8] Undefined index:  E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039450s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001611s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001683s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001905s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002015s ]
+
+[ 2017-06-06T23:57:20+08:00 ] ::1 /admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 18 行.
+NOTIC: [8] Undefined index: p E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 30 行.
+NOTIC: [8] Undefined index: pageSize E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 31 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` <> -1 ORDER BY listorder desc,news_id desc LIMIT 0,10   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: positions E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 103 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 121 行.
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 134 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 92 行.
+NOTIC: [8] Undefined index:  E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001584s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001898s ]
+
+[ 2017-06-06T23:57:22+08:00 ] ::1 /admin.php?c=content&a=edit&id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `cms_news` WHERE ( news_id=28 ) LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: titleFontColor E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 127 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 139 行.
+NOTIC: [8] Undefined variable: copyfrom E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001696s ]
+
+[ 2017-06-06T23:57:30+08:00 ] ::1 /admin.php?c=image&a=kindupload&dir=image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant m - assumed 'm' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant d - assumed 'd' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\Program Files\phpStudy\WWW\TP_teacher\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2017-06-06T23:57:34+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001742s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0139s ]
+SQL: UPDATE `cms_news` SET `title`='大学生职业发展与就业指导课现阶段',`thumb`='/upload/2017/05/04/590aaae1b0d4a.png',`content`='<p class=\"MsoNormal\" align=\"center\" style=\"text-align:center;\">
+	<b> </b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\" style=\"text-indent:28pt;\">
+	<b> 大学生职业发展与就业指导课现阶段作为公共必修课，既强调职业在人生发展中的重要地位，又关注学生的全面发展和终身发展。通过激发大学生职业生涯发展的自主意识，树立正确的就业观，促使大学生理性地规划自身未来的发展，并努力在学习过程中自觉地提高就业能力和生涯管理能力。<span></span> </b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\" style=\"text-indent:28pt;\">
+	<b>在课程设置方面，实现生涯指导四年不断线。在本科一年级开展《大学生职业启蒙教育》模块教学，指导学生认知自己，认知专业，初步树立职业意识，并结合本专业的职业要求规划自己的大学生活；在本科二年级开展《大学生职业发展与规划教育》模块教学，指导学生进行科学的职业规划、探索自己的职业定位、提高职业能力；在本科三年级开展《大学生就业指导教育》模块教学，帮助学生明确职业方向，了解就业政策和就业流程，掌握求职策略，提高就业能力；在本科四年级开展《大学生就业形势与政策教育》模块教学，了解当前就业形势，提升求职、创业意识，帮助学生了解毕业、就业必要程序和相关政策。</b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\" style=\"text-indent:28pt;\">
+	<b>在课程目标方面，通过课程教学，大学生应当在态度、知识和技能三个层面均达到以下目标。<span>1.</span>态度层面：通过本课程的教学，大学生应当树立起职业生涯发展的自主意识，树立积极正确的人生观、价值观和就业观念，把个人发展和国家需要、社会发展相结合，确立职业的概念和意识，愿意为个人的生涯发展和社会发展主动付出积极的努力。<span>2.</span>知识层面：通过本课程的教学，大学生应当基本了解职业发展的阶段特点；较为清晰地认识自己的特性、职业的特性以及社会环境；了解就业形势与政策法规；掌握基本的劳动力市场信息、相关的职业分类知识以及创业的基本知识。<span>3.</span>技能层面：通过本课程的教学，大学生应当掌握自我探索技能、信息搜索与管理技能、生涯决策技能、求职技能等，还应该通过课程提高学生的各种通用技能，比如沟通技能、问题解决技能、自我管理技能和人际交往技能等。<span></span> </b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\" style=\"text-indent:28pt;\">
+	<b>在教学模式方面，采用理论与实践相结合、讲授与训练相结合的方式进行。教学可采用课堂讲授、典型案例分析、情景模拟训练、小组讨论、角色扮演、社会调查、实习见习等方法。在教学的过程中，要充分利用各种资源。除了教师和学生自身的资源之外，还需要使用相关的职业生涯与发展规划工具，包括职业测评、相关图书资料等；可以调动社会资源，采取与外聘专家、成功校友、职场人物专题讲座和座谈相结合的方法。是集理论课、实务课和经验课为一体的综合课程。<span></span> </b> 
+</p>
+<p class=\"MsoNormal\">
+	<b><span> </span> </b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\" style=\"text-indent:28pt;\">
+	<b><img src=\"/admin.php/upload/2017/06/06/5936d0ea6023d.png\" alt=\"\" /><br />
+</b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\">
+	<b><b> </b> </b> 
+</p>
+<p>
+	<br />
+</p>
+<p class=\"MsoNormal\" align=\"left\">
+	<b></b> 
+</p>' WHERE ( news_id=28 ) [ RunTime:0.0013s ]
+
+[ 2017-06-06T23:57:36+08:00 ] ::1 /admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001637s ]
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 18 行.
+NOTIC: [8] Undefined index: p E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 30 行.
+NOTIC: [8] Undefined index: pageSize E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 31 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` <> -1 ORDER BY listorder desc,news_id desc LIMIT 0,10   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: positions E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 103 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 121 行.
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 134 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 92 行.
+NOTIC: [8] Undefined index:  E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002007s ]
+
+[ 2017-06-06T23:58:38+08:00 ] ::1 /admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001604s ]
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 18 行.
+NOTIC: [8] Undefined index: p E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 30 行.
+NOTIC: [8] Undefined index: pageSize E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 31 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0159s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` <> -1 ORDER BY listorder desc,news_id desc LIMIT 0,10   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: positions E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 103 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 121 行.
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 134 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 92 行.
+NOTIC: [8] Undefined index:  E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039078s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001594s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002134s ]
+
+[ 2017-06-06T23:58:40+08:00 ] ::1 /admin.php?c=content&a=edit&id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `cms_news` WHERE ( news_id=28 ) LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: titleFontColor E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 127 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 139 行.
+NOTIC: [8] Undefined variable: copyfrom E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\c9346596b4ea11ecbab575e85e082471.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001971s ]
+
+[ 2017-06-06T23:58:49+08:00 ] ::1 /admin.php?c=image&a=kindupload&dir=image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant m - assumed 'm' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [8] Use of undefined constant d - assumed 'd' E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\UploadImageModel.class.php 第 22 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\Program Files\phpStudy\WWW\TP_teacher\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2017-06-06T23:58:52+08:00 ] ::1 /admin.php?c=content&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0138s ]
+SQL: UPDATE `cms_news` SET `title`='大学生职业发展与就业指导课现阶段',`thumb`='/upload/2017/05/04/590aaae1b0d4a.png',`content`='<p class=\"MsoNormal\" align=\"center\" style=\"text-align:center;\">
+	<b> </b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\" style=\"text-indent:28pt;\">
+	<b> 大学生职业发展与就业指导课现阶段作为公共必修课，既强调职业在人生发展中的重要地位，又关注学生的全面发展和终身发展。通过激发大学生职业生涯发展的自主意识，树立正确的就业观，促使大学生理性地规划自身未来的发展，并努力在学习过程中自觉地提高就业能力和生涯管理能力。<span></span> </b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\" style=\"text-indent:28pt;\">
+	<b>在课程设置方面，实现生涯指导四年不断线。在本科一年级开展《大学生职业启蒙教育》模块教学，指导学生认知自己，认知专业，初步树立职业意识，并结合本专业的职业要求规划自己的大学生活；在本科二年级开展《大学生职业发展与规划教育》模块教学，指导学生进行科学的职业规划、探索自己的职业定位、提高职业能力；在本科三年级开展《大学生就业指导教育》模块教学，帮助学生明确职业方向，了解就业政策和就业流程，掌握求职策略，提高就业能力；在本科四年级开展《大学生就业形势与政策教育》模块教学，了解当前就业形势，提升求职、创业意识，帮助学生了解毕业、就业必要程序和相关政策。</b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\" style=\"text-indent:28pt;\">
+	<b>在课程目标方面，通过课程教学，大学生应当在态度、知识和技能三个层面均达到以下目标。<span>1.</span>态度层面：通过本课程的教学，大学生应当树立起职业生涯发展的自主意识，树立积极正确的人生观、价值观和就业观念，把个人发展和国家需要、社会发展相结合，确立职业的概念和意识，愿意为个人的生涯发展和社会发展主动付出积极的努力。<span>2.</span>知识层面：通过本课程的教学，大学生应当基本了解职业发展的阶段特点；较为清晰地认识自己的特性、职业的特性以及社会环境；了解就业形势与政策法规；掌握基本的劳动力市场信息、相关的职业分类知识以及创业的基本知识。<span>3.</span>技能层面：通过本课程的教学，大学生应当掌握自我探索技能、信息搜索与管理技能、生涯决策技能、求职技能等，还应该通过课程提高学生的各种通用技能，比如沟通技能、问题解决技能、自我管理技能和人际交往技能等。<span></span> </b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\" style=\"text-indent:28pt;\">
+	<b>在教学模式方面，采用理论与实践相结合、讲授与训练相结合的方式进行。教学可采用课堂讲授、典型案例分析、情景模拟训练、小组讨论、角色扮演、社会调查、实习见习等方法。在教学的过程中，要充分利用各种资源。除了教师和学生自身的资源之外，还需要使用相关的职业生涯与发展规划工具，包括职业测评、相关图书资料等；可以调动社会资源，采取与外聘专家、成功校友、职场人物专题讲座和座谈相结合的方法。是集理论课、实务课和经验课为一体的综合课程。<span></span> </b> 
+</p>
+<p class=\"MsoNormal\">
+	<b><span> </span> </b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\" style=\"text-indent:28pt;\">
+	<b><img src=\"/upload/2017/06/06/5936d13985914.png\" alt=\"\" /><br />
+</b> 
+</p>
+<p class=\"MsoNormal\" align=\"left\">
+	<b><b> </b> </b> 
+</p>
+<p>
+	<br />
+</p>
+<p class=\"MsoNormal\" align=\"left\">
+	<b></b> 
+</p>' WHERE ( news_id=28 ) [ RunTime:0.0012s ]
+
+[ 2017-06-06T23:58:54+08:00 ] ::1 /admin.php?c=content
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 18 行.
+NOTIC: [8] Undefined index: p E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 30 行.
+NOTIC: [8] Undefined index: pageSize E:\Program Files\phpStudy\WWW\TP_teacher\Application\Admin\Controller\ContentController.class.php 第 31 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\NewsModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` <> -1 ORDER BY listorder desc,news_id desc LIMIT 0,10   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with that of Think\Model::find() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Model\MenuModel.class.php 第 135 行.
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` <> -1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: positions E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 103 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 121 行.
+NOTIC: [8] Undefined index: title E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 134 行.
+NOTIC: [8] Undefined variable: webSiteMenu E:\Program Files\phpStudy\WWW\TP_teacher\Application\Runtime\Cache\Admin\ccc9ced3ad798311a07cb47b740981c5.php 第 173 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 92 行.
+NOTIC: [8] Undefined index:  E:\Program Files\phpStudy\WWW\TP_teacher\Application\Common\Common\function.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001147s ]
+
